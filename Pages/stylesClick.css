@@ -1,0 +1,279 @@
+/* Styles for scrollmenu */
+div.scrollmenu {
+  background-color: #fafafa;
+  overflow: hidden;
+  white-space: nowrap;
+  overflow-x: scroll;
+  display: -webkit-flex; /* Add -webkit- prefix */
+  display: flex;
+  gap: 20px;
+  padding: 17px;
+}
+
+/* Styles for scrollmenu (mobile) */
+@media only screen and (max-width: 768px) {
+  div.scrollmenu {
+    background-color: rgb(30, 30, 30);
+    gap: 20px;
+    padding: 30px 0px 30px 20px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+/* Hide scrollbar in WebKit browsers */
+.scrollmenu::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+/* Smooth scroll for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Link styles inside scrollmenu */
+div.scrollmenu a {
+  display: inline-block;
+  font-size: 3vh;
+  background-color: rgb(148, 217, 231);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  border-radius: 40px;
+}
+
+/* Link sstules inside scrollmenu (mobile) */
+@media only screen and (max-width: 768px) {
+  div.scrollmenu a {
+    display: inline-block;
+    font-size: 1.6vh;
+    background-color: rgba(220, 19, 19, 0) !important;
+    color: rgb(230, 230, 230) !important;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s, border-radius 0.3s, color 0.3s; /* Add transition for smooth effect */
+  }
+
+  div.scrollmenu a:hover,
+  div.scrollmenu a:focus,
+  div.scrollmenu a:active {
+    /* Apply red background on hover and when active */
+    background-color: rgb(
+      90,
+      143,
+      153
+    ) !important; /* Change background color to red */
+    border-radius: 100px; /* Change border radius */
+    color: rgb(255, 255, 255) !important; /* Change text color to red */
+  }
+}
+
+/* Body styles */
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../Images/Untitled1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 100vh;
+  margin: 0px 0;
+  padding-top: 0px;
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+/* Body styles (mobile) */
+@media only screen and (max-width: 768px) {
+  body {
+    margin-bottom: -50px;
+    background-color: rgb(30, 30, 30);
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+/* Content styles */
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+body .content {
+  height: 85vh;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+/* Child div inside content PIZZA??*/
+.content div {
+  width: 100%;
+}
+
+/* Category line styles */
+.lineCategory {
+  height: 3px;
+  border-width: 1;
+  color: rgba(128, 128, 128, 0.002);
+  background-color: rgb(12, 2, 162);
+}
+
+/* Category line styles (mobile) */
+@media only screen and (max-width: 768px) {
+  .lineCategory {
+    height: 0px;
+    border-width: 1;
+    color: rgba(0, 0, 0, 0);
+    background-color: rgba(180, 179, 197, 0);
+  }
+}
+
+/* Line styles */
+.line {
+  border-top: 3px blue;
+}
+
+/* Title styles */
+.Naslov {
+  font-size: 4vh;
+  font-weight: bold;
+  color: #2301ab;
+}
+
+/* Title styles (mobile) */
+@media only screen and (max-width: 768px) {
+  .Naslov {
+    margin-top: -10px;
+    margin-bottom: -30px;
+    padding: 100px 20px 40px 20px;
+    /* background-color: rgb(148, 217, 231); */
+    color: rgb(38, 38, 38);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+/* Item styles */
+.Items {
+  font-weight: bold;
+  font-size: 2.8vh;
+  font-family: cursive;
+}
+
+/* Item styles (mobile) */
+@media only screen and (max-width: 768px) {
+  .Items {
+    margin-top: -10px;
+    margin-bottom: -30px;
+    padding: 40px 40px 40px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.2vh;
+    color: rgb(38, 38, 38);
+    /* background-color: rgb(148, 217, 231); */
+    font-weight: 500;
+  }
+}
+
+/* Money styles */
+.money {
+  color: rgb(0, 0, 0);
+  float: right;
+  font-size: 2.5vh;
+  padding-top: 0.2vh;
+}
+
+/* Money styles (mobile) */
+@media only screen and (max-width: 768px) {
+  .money {
+    color: rgb(38, 38, 38);
+    font-size: 2.1vh;
+    font-weight: 600;
+  }
+}
+
+/* Element width */
+#Kafe,
+#PrirodniSokovi,
+#BezalkoholnaPica,
+#Vode,
+#GaziraniSokovi,
+#EnergetskiNapici,
+#Piva,
+#Tocenopivo,
+#Vodke,
+#Likeri,
+#Tekile,
+#Konjak,
+#Gin,
+#Viski,
+#Piva,
+#Cideri,
+#Rakija,
+#VinaC,
+#VinaF,
+#LetnjiMix,
+#Pizza,
+#Kokteli,
+#Sendvici,
+#NonAlchoholic {
+  width: 100%;
+}
+
+/* Parent food item styles */
+.parentHrana {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Child name styles */
+.childName {
+  font-weight: bold;
+  font-size: 3vh;
+  font-family: cursive;
+}
+
+/* Child size styles */
+.childSize p {
+  text-align: right;
+  font-weight: bold;
+  font-size: 2.4vh;
+  font-family: cursive;
+}
+
+/* Child cost styles */
+.childCost p {
+  text-align: right;
+  font-weight: bold;
+  font-size: 2.4vh;
+  font-family: cursive;
+  color: #000000;
+}
+
+/* Description styles */
+.Opis p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8vh;
+  font-family: cursive;
+}
+
+/* Border styles */
+.borderClass {
+  border-style: none none dotted none;
+  border-color: blue;
+}
+
+/* Span description styles */
+.spanOpis {
+  font-size: 1.6vh;
+}

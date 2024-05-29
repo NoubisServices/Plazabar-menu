@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .loader {
+        border: 5px solid #f3f3f3;
+        border-top: 6px solid #3498db;
+        margin-right: 10px;
+        margin-top: 20px;
+        border: 14px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #3498db;
+        width: 15px;
+        height: 15px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+      }
+
+      /* Safari */
+      @-webkit-keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url("../Images/Untitled.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        min-height: 100vh;
+      }
+
+      img {
+        height: 38vh;
+      }
+    </style>
+  </head>
+
+  <body>
+    <img src="..\Images\PlazaBarImage.png" alt="Girl in a jacket" />
+
+    <div class="loader"></div>
+  </body>
+</html>

@@ -16,7 +16,7 @@ div.scrollmenu {
   div.scrollmenu {
     background-color: rgb(255, 255, 255);
     gap: 20px;
-    padding: 30px 0px 30px 20px;
+    padding: 20px 0px 10px 20px;
     text-transform: uppercase;
     font-family: "Khand";
     /* font-family: Arial, Helvetica, sans-serif; */
@@ -36,13 +36,13 @@ html {
 /* Link styles inside scrollmenu */
 div.scrollmenu a {
   display: inline-block;
-  font-size: 1.6vh;
+  font-size: 1.9vh;
   background-color: rgba(220, 19, 19, 0) !important;
   color: rgb(0, 0, 0) !important;
   font-weight: 600;
   letter-spacing: 3px;
   text-align: center;
-  padding: 14px;
+  padding: 10px;
   text-decoration: none;
   border-radius: 100px;
   transition: background-color 0.3s, border-radius 0.3s, color 0.3s; /* Add transition for smooth effect */
@@ -52,13 +52,13 @@ div.scrollmenu a {
 @media only screen and (max-width: 768px) {
   div.scrollmenu a {
     display: inline-block;
-    font-size: 1.6vh;
+    font-size: 2vh;
     background-color: rgba(220, 19, 19, 0) !important;
     color: rgb(0, 0, 0) !important;
     font-weight: 600;
     letter-spacing: 3px;
     text-align: center;
-    padding: 14px;
+    padding: 10px;
     text-decoration: none;
     border-radius: 100px;
     transition: background-color 0.3s, border-radius 0.3s, color 0.3s; /* Add transition for smooth effect */
@@ -155,9 +155,10 @@ body .content {
 /* Title styles (mobile) */
 @media only screen and (max-width: 768px) {
   .Naslov {
+    font-size: 30px;
     font-weight: 400;
-    margin-top: -10px;
-    margin-bottom: -30px;
+    margin-top: -60px;
+    margin-bottom: -60px;
     padding: 100px 20px 40px 20px;
     /* background-color: rgb(148, 217, 231); */
     color: rgb(38, 38, 38);
@@ -293,7 +294,8 @@ body .content {
 
 /* Span description styles */
 .spanOpis {
-  font-size: 1.6vh;
+  font-size: 1.5vh;
+  font-family: "GloriaHallelujah";
 }
 
 /* Pizzas */
@@ -301,20 +303,25 @@ body .content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 10px;
+  margin-bottom: -40px;
+  margin-top: -40px;
+  font-family: "GloriaHallelujah";
+  font-size: 2vh;
 }
 
 .PizzaNameDescription {
-  padding: 40px 40px 40px 50px;
+  padding: 40px 40px;
   flex: 1;
 }
 
 .SizesAndPrices {
-  flex: 1;
+  flex: 30;
   text-align: right;
+  font-size: 1.8vh;
+  font-weight: 600;
+  font-family: "Khand";
 }
 
 .SizesAndPrices p {
-  padding: 40px 40px 0px 0px;
   margin: 5px 0;
 }

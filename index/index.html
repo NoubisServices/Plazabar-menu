@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="stylesClick.css" />
+    
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="../style/style.css" />
   </head>
 
   <body>
@@ -541,145 +552,7 @@
     </div>
     
 
-      <!-- <div id="Pizza">
-        <p class="Naslov">Pizza</p>
-        <hr class="lineCategory" />
-
-        <div class="borderClass">
-          <div class="parentHrana">
-            <div class="childName">
-              <p>Sa pečurkama</p>
-            </div>
-            <div class="childSize">
-              <p>(32cm)</p>
-              <p>(52cm)</p>
-            </div>
-            <div class="childCost">
-              <p>880 RSD</p>
-              <p>1800 RSD</p>
-            </div>
-          </div>
-          <div class="Opis">
-            <p>
-              (kečap,šunka,sir,pečurke,masline)<br />
-              ketchup,ham,cheese,mushrooms,olivas
-            </p>
-          </div>
-        </div>
-
-        <div class="borderClass">
-          <div class="parentHrana">
-            <div class="childName">
-              <p>Mešana</p>
-            </div>
-            <div class="childSize">
-              <p>(32cm)</p>
-              <p>(52cm)</p>
-            </div>
-            <div class="childCost">
-              <p>940 RSD</p>
-              <p>1850 RSD</p>
-            </div>
-          </div>
-          <div class="Opis">
-            <p>
-              (kečap,šunka,sir,pečurke,paprika)<br />
-              ketchup,ham,cheese,mushrooms,pepper
-            </p>
-          </div>
-        </div>
-
-        <div class="borderClass">
-          <div class="parentHrana">
-            <div class="childName">
-              <p>Domaća</p>
-            </div>
-            <div class="childSize">
-              <p>(32cm)</p>
-              <p>(52cm)</p>
-            </div>
-            <div class="childCost">
-              <p>930 RSD</p>
-              <p>1830 RSD</p>
-            </div>
-          </div>
-          <div class="Opis">
-            <p>
-              (kečap,šunka,sir,jaje,paprika,crni luk,pavlaka)<br />
-              ketchup,ham,cheese,egg,pepper,onion, sour cream
-            </p>
-          </div>
-        </div>
-
-        <div class="borderClass">
-          <div class="parentHrana">
-            <div class="childName">
-              <p>Gurmanska</p>
-            </div>
-            <div class="childSize">
-              <p>(32cm)</p>
-              <p>(52cm)</p>
-            </div>
-            <div class="childCost">
-              <p>980 RSD</p>
-              <p>2050 RSD</p>
-            </div>
-          </div>
-          <div class="Opis">
-            <p>
-              (kečap,šunka,kulen, dimnjeni vrat,sir,jaje,)<br />
-              ketchup,ham,sausage, smoke spare ribs,egg
-            </p>
-          </div>
-        </div>
-
-        <div class="borderClass">
-          <div class="parentHrana">
-            <div class="childName">
-              <p>Sa tunjevinom</p>
-            </div>
-            <div class="childSize">
-              <p>(32cm)</p>
-              <p>(52cm)</p>
-            </div>
-            <div class="childCost">
-              <p>980 RSD</p>
-              <p>1980 RSD</p>
-            </div>
-          </div>
-          <div class="Opis">
-            <p>
-              (kečap,šunka,sir,tunjevina, luk)<br />
-              ketchup,ham,cheese,tuna,garlic
-            </p>
-          </div>
-        </div>
-
-        <div class="borderClass">
-          <div class="parentHrana">
-            <div class="childName">
-              <p>Vegeterijana</p>
-            </div>
-            <div class="childSize">
-              <p>(32cm)</p>
-              <p>(52cm)</p>
-            </div>
-            <div class="childCost">
-              <p>950 RSD</p>
-              <p>1890 RSD</p>
-            </div>
-          </div>
-          <div class="Opis">
-            <p>
-              (paradajz sos,mozzarela,kukuruz,pečurke, masline,paprika,
-              origano)<br />
-              ketchup,cheese,sweet corn,mushrooms,pepper
-            </p>
-          </div>
-        </div>
-
-        <hr class="lineCategory" />
-      </div> -->
+    
 
       <div id="Sendvici">
         <p class="Naslov">Sendviči</p>
@@ -783,61 +656,59 @@
         <hr class="line" />
         <hr class="lineCategory" />
       </div>
+      <script>
+        let array = [
+  "Kafe",
+  "PrirodniSokovi",
+  "BezalkoholnaPica",
+  "Vode",
+  "GaziraniSokovi",
+  "EnergetskiNapici",
+  "Piva",
+  "Tocenopivo",
+  "Vodke",
+  "Likeri",
+  "Tekile",
+  "Konjak",
+  "Gin",
+  "Viski",
+  "Piva",
+  "Cideri",
+  "Rakija",
+  "VinaC",
+  "VinaF",
+  "LetnjiMix",
+  "Pizza",
+  "Sendvici",
+  "Kokteli",
+  "NonAlchoholic",
+];
 
-  
+function myFunction(name) {
+  var x = document.getElementById(name);
+  var x1 = document.getElementById(name + "A");
 
-    <script>
-      let array = [
-        "Kafe",
-        "PrirodniSokovi",
-        "BezalkoholnaPica",
-        "Vode",
-        "GaziraniSokovi",
-        "EnergetskiNapici",
-        "Piva",
-        "Tocenopivo",
-        "Vodke",
-        "Likeri",
-        "Tekile",
-        "Konjak",
-        "Gin",
-        "Viski",
-        "Piva",
-        "Cideri",
-        "Rakija",
-        "VinaC",
-        "VinaF",
-        "LetnjiMix",
-        "Pizza",
-        "Sendvici",
-        "Kokteli",
-        "NonAlchoholic",
-      ];
+  arr = array.filter(function (item) {
+    return item !== name;
+  });
 
-      function myFunction(name) {
-        var x = document.getElementById(name);
-        var x1 = document.getElementById(name + "A");
+  arr.forEach((element) => {
+    let xm = document.getElementById(element);
+    xm.style.backgroundColor = "#11ffee00";
+    xm.style.opacity = "1";
 
-        arr = array.filter(function (item) {
-          return item !== name;
-        });
+    let xm1 = document.getElementById(element + "A");
 
-        arr.forEach((element) => {
-          let xm = document.getElementById(element);
-          xm.style.backgroundColor = "#11ffee00";
-          xm.style.opacity = "1";
+    xm1.style.backgroundColor = "#95D8EA";
+    xm1.style.color = "black";
+  });
 
-          let xm1 = document.getElementById(element + "A");
+  x.style.backgroundColor = none;
+  x.style.opacity = "1";
+  x1.style.backgroundColor = "black";
+  x1.style.color = "white";
+}
 
-          xm1.style.backgroundColor = "#95D8EA";
-          xm1.style.color = "black";
-        });
-
-        x.style.backgroundColor = none;
-        x.style.opacity = "1";
-        x1.style.backgroundColor = "black";
-        x1.style.color = "white";
-      }
-    </script>
+      </script>
   </body>
 </html>

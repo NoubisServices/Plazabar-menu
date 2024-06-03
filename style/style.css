@@ -150,18 +150,19 @@ body .content {
   /* font-family: Arial, Helvetica, sans-serif; */
   font-family: "Khand";
   font-size: 52px;
+  text-transform: uppercase;
 }
 
 /* Title styles (mobile) */
 @media only screen and (max-width: 768px) {
   .Naslov {
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 600;
     margin-top: -60px;
     margin-bottom: -60px;
     padding: 100px 20px 40px 20px;
     /* background-color: rgb(148, 217, 231); */
-    color: rgb(38, 38, 38);
+    color: rgb(68, 142, 158);
     /* font-family: Arial, Helvetica, sans-serif; */
     font-family: "Khand";
   }
@@ -191,7 +192,7 @@ body .content {
     padding: 40px 40px 40px 50px;
     /* font-family: Arial, Helvetica, sans-serif; */
     font-family: "GloriaHallelujah";
-    font-size: 2vh;
+    font-size: 2.4vh;
     color: rgb(38, 38, 38);
     /* background-color: rgb(148, 217, 231); */
     font-weight: 500;
@@ -210,8 +211,8 @@ body .content {
 /* Money styles (mobile) */
 @media only screen and (max-width: 768px) {
   .money {
-    color: rgb(38, 38, 38);
-    font-size: 1.8vh;
+    color: rgb(68, 142, 158);
+    font-size: 2.3vh;
     font-weight: 600;
     font-family: "Khand";
   }
@@ -306,7 +307,7 @@ body .content {
   margin-bottom: -40px;
   margin-top: -40px;
   font-family: "GloriaHallelujah";
-  font-size: 2vh;
+  font-size: 2.4vh;
 }
 
 .PizzaNameDescription {
@@ -327,5 +328,25 @@ body .content {
 }
 
 .English {
-  color: rgb(209, 159, 7);
+  color: rgb(242, 218, 60);
+}
+
+.wave-container {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+.wave {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to right,
+    #000000,
+    #000000 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  transform: rotate(10deg);
 }

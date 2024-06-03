@@ -331,22 +331,21 @@ body .content {
   color: rgb(242, 218, 60);
 }
 
-.wave-container {
-  position: relative;
-  width: 100%;
-  height: 150px;
+.wavy-line {
+  width: 100px;
+  height: 50px;
   overflow: hidden;
+  margin: 0 auto 0 auto;
 }
-.wave {
-  position: absolute;
-  width: 200%;
-  height: 100%;
-  background: repeating-linear-gradient(
-    to right,
-    #000000,
-    #000000 10px,
-    transparent 10px,
-    transparent 20px
-  );
-  transform: rotate(10deg);
+.wavy-line:before {
+  content: attr(data-text);
+  position: relative;
+  top: 0px;
+  left: 1.5%;
+  color: rgba(239, 8, 8, 0);
+  width: calc(100% + 27px);
+  font-size: 3em;
+  text-decoration-style: wavy;
+  text-decoration-color: rgb(68, 142, 158);
+  text-decoration-line: underline;
 }

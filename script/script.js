@@ -45,14 +45,15 @@ function myFunction(name) {
     if (imeKategorije) {
         imeKategorije.style.backgroundColor = "none";
         imeKategorije.style.opacity = "1";
-        imeKategorije.scrollIntoView({ behavior: "smooth", block: "start" });
+        imeKategorije.scrollIntoView({ behavior: "smooth", block: "start",inline: "start" });
     }
 
     if (meniKategorije) {
         meniKategorije.style.backgroundColor = "black";
         meniKategorije.style.color = "white";
-
-        // Skrolujemo tako da kliknuta meni kategorija bude na vrhu roditeljskog elementa
-        meniKategorije.scrollIntoView({ behavior: "smooth", block: "start" });
+        setTimeout(function() {
+            meniKategorije.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
+        }, 100); 
     }
+
 }

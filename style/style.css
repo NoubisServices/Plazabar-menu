@@ -191,11 +191,12 @@ body .content {
     margin-bottom: -30px;
     padding: 40px 40px 40px 50px;
     /* font-family: Arial, Helvetica, sans-serif; */
-    font-family: "GloriaHallelujah";
-    font-size: 2.4vh;
+    font-family: "Love ya like a sister";
+    font-size: 2.3vh;
     color: rgb(38, 38, 38);
     /* background-color: rgb(148, 217, 231); */
-    font-weight: 500;
+    font-weight: 800;
+    letter-spacing: 1.5px;
   }
 }
 
@@ -306,7 +307,7 @@ body .content {
   align-items: flex-start;
   margin-bottom: -40px;
   margin-top: -40px;
-  font-family: "GloriaHallelujah";
+  font-family: "Love ya like a sister";
   font-size: 2.4vh;
 }
 
@@ -329,23 +330,4 @@ body .content {
 
 .English {
   color: rgb(242, 218, 60);
-}
-
-.wavy-line {
-  width: 100px;
-  height: 50px;
-  overflow: hidden;
-  margin: 0 auto 0 auto;
-}
-.wavy-line:before {
-  content: attr(data-text);
-  position: relative;
-  top: 0px;
-  left: 1.5%;
-  color: rgba(239, 8, 8, 0);
-  width: calc(100% + 27px);
-  font-size: 3em;
-  text-decoration-style: wavy;
-  text-decoration-color: rgb(68, 142, 158);
-  text-decoration-line: underline;
 }

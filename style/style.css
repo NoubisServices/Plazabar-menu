@@ -3,7 +3,7 @@ div.scrollmenu {
   overflow: hidden;
   white-space: nowrap;
   overflow-x: scroll;
-  display: -webkit-flex; 
+  display: -webkit-flex;
   display: flex;
   gap: 20px;
   padding: 17px;
@@ -16,12 +16,12 @@ div.scrollmenu {
     gap: 20px;
     padding: 20px 0px 10px 20px;
     text-transform: uppercase;
-    font-family: "Khand";
+    font-family: "Roboto Condensed";
   }
 }
 
 .scrollmenu::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }
 
 html {
@@ -32,14 +32,14 @@ div.scrollmenu p {
   display: inline-block;
   font-size: 1.9vh;
   background-color: rgba(220, 19, 19, 0) !important;
-  color: rgb(0, 0, 0) !important;
+  color: rgba(15, 35, 60, 255) !important;
   font-weight: 600;
   letter-spacing: 3px;
   text-align: center;
   padding: 10px;
   text-decoration: none;
   border-radius: 100px;
-  transition: background-color 0.3s, border-radius 0.3s, color 0.3s; 
+  transition: background-color 0.3s, border-radius 0.3s, color 0.3s;
 }
 
 @media only screen and (max-width: 768px) {
@@ -47,14 +47,14 @@ div.scrollmenu p {
     display: inline-block;
     font-size: 2vh;
     background-color: rgba(220, 19, 19, 0) !important;
-    color: rgb(0, 0, 0) !important;
+    color: rgba(15, 35, 60, 255) !important;
     font-weight: 600;
     letter-spacing: 3px;
     text-align: center;
     padding: 10px;
     text-decoration: none;
     border-radius: 100px;
-    transition: background-color 0.3s, border-radius 0.3s, color 0.3s; 
+    transition: background-color 0.3s, border-radius 0.3s, color 0.3s;
   }
 
   div.scrollmenu p:hover,
@@ -130,8 +130,8 @@ body .content {
   margin-top: -10px;
   margin-bottom: -30px;
   padding: 100px 20px 40px 20px;
-  color: rgb(38, 38, 38);
-  font-family: "Khand";
+  color: rgb(0, 128, 120);
+  font-family: "Roboto Condensed";
   font-size: 52px;
   text-transform: uppercase;
 }
@@ -140,11 +140,11 @@ body .content {
   .Naslov {
     font-size: 30px;
     font-weight: 600;
-    margin-top: -60px;
+    margin-top: -20px;
     margin-bottom: -60px;
     padding: 100px 20px 40px 20px;
-    color: rgb(68, 142, 158);
-    font-family: "Khand";
+    color: rgb(0, 128, 120);
+    font-family: "Roboto Condensed";
   }
 }
 
@@ -155,9 +155,9 @@ body .content {
   margin-top: -10px;
   margin-bottom: -30px;
   padding: 40px 40px 40px 50px;
-  font-family: "GloriaHallelujah";
+  font-family: "Roboto Condensed";
   font-size: 2vh;
-  color: rgb(38, 38, 38);
+  color: rgba(15, 35, 60, 255);
   font-weight: 500;
 }
 
@@ -166,28 +166,28 @@ body .content {
     margin-top: -10px;
     margin-bottom: -30px;
     padding: 40px 40px 40px 50px;
-    font-family: "Love ya like a sister";
+    font-family: "Roboto Condensed";
     font-size: 2.3vh;
-    color: rgb(38, 38, 38);
+    color: rgba(15, 35, 60, 255);
     font-weight: 800;
     letter-spacing: 1.5px;
   }
 }
 
 .money {
-  color: rgb(0, 0, 0);
+  color: rgb(0, 128, 120);
   float: right;
   font-size: 2.5vh;
   padding-top: 0.2vh;
-  font-family: "Khand";
+  font-family: "Roboto Condensed";
 }
 
 @media only screen and (max-width: 768px) {
   .money {
-    color: rgb(68, 142, 158);
-    font-size: 2.3vh;
+    color: rgb(0, 128, 120);
+    font-size: 2vh;
     font-weight: 600;
-    font-family: "Khand";
+    font-family: "Roboto Condensed";
   }
 }
 
@@ -268,31 +268,42 @@ body .content {
 /* Span description styles */
 .spanOpis {
   font-size: 1.5vh;
-  font-family: "GloriaHallelujah";
+  font-family: "Roboto Condensed";
+  line-height: 25px !important;
 }
 
 /* Pizzas */
+.PizzaName {
+  font-size: 2.4vh;
+}
 .PizzaItem {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: -40px;
   margin-top: -40px;
-  font-family: "Love ya like a sister";
-  font-size: 2.4vh;
+  font-family: "Roboto Condensed";
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: rgba(0, 128, 120);
 }
 
 .PizzaNameDescription {
-  padding: 40px 40px;
+  font-family: "Roboto Condensed";
+  font-size: 1.8vh;
+  padding: 40px 40px 40px 50px;
   flex: 1;
+  color: rgba(15, 35, 60, 255);
+  line-height: 16px;
 }
 
 .SizesAndPrices {
   flex: 30;
   text-align: right;
-  font-size: 1.8vh;
+  color: rgb(0, 128, 120);
+  font-size: 2vh;
   font-weight: 600;
-  font-family: "Khand";
+  font-family: "Roboto Condensed";
 }
 
 .SizesAndPrices p {
@@ -300,5 +311,5 @@ body .content {
 }
 
 .English {
-  color: rgb(242, 218, 60);
+  color: rgba(233, 182, 32, 255);
 }

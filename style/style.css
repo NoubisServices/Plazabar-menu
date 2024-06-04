@@ -1,17 +1,15 @@
-/* Styles for scrollmenu */
 div.scrollmenu {
   background-color: #fafafa;
   overflow: hidden;
   white-space: nowrap;
   overflow-x: scroll;
-  display: -webkit-flex; /* Add -webkit- prefix */
+  display: -webkit-flex; 
   display: flex;
   gap: 20px;
   padding: 17px;
   border-bottom: 1px solid black;
 }
 
-/* Styles for scrollmenu (mobile) */
 @media only screen and (max-width: 768px) {
   div.scrollmenu {
     background-color: rgb(255, 255, 255);
@@ -19,22 +17,18 @@ div.scrollmenu {
     padding: 20px 0px 10px 20px;
     text-transform: uppercase;
     font-family: "Khand";
-    /* font-family: Arial, Helvetica, sans-serif; */
   }
 }
 
-/* Hide scrollbar in WebKit browsers */
 .scrollmenu::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
+  display: none; 
 }
 
-/* Smooth scroll for the whole page */
 html {
   scroll-behavior: smooth;
 }
 
-/* Link styles inside scrollmenu */
-div.scrollmenu a {
+div.scrollmenu p {
   display: inline-block;
   font-size: 1.9vh;
   background-color: rgba(220, 19, 19, 0) !important;
@@ -45,12 +39,11 @@ div.scrollmenu a {
   padding: 10px;
   text-decoration: none;
   border-radius: 100px;
-  transition: background-color 0.3s, border-radius 0.3s, color 0.3s; /* Add transition for smooth effect */
+  transition: background-color 0.3s, border-radius 0.3s, color 0.3s; 
 }
 
-/* Link sstules inside scrollmenu (mobile) */
 @media only screen and (max-width: 768px) {
-  div.scrollmenu a {
+  div.scrollmenu p {
     display: inline-block;
     font-size: 2vh;
     background-color: rgba(220, 19, 19, 0) !important;
@@ -61,12 +54,12 @@ div.scrollmenu a {
     padding: 10px;
     text-decoration: none;
     border-radius: 100px;
-    transition: background-color 0.3s, border-radius 0.3s, color 0.3s; /* Add transition for smooth effect */
+    transition: background-color 0.3s, border-radius 0.3s, color 0.3s; 
   }
 
-  div.scrollmenu a:hover,
-  div.scrollmenu a:focus,
-  div.scrollmenu a:active {
+  div.scrollmenu p:hover,
+  div.scrollmenu p:focus,
+  div.scrollmenu p:active {
     background-color: rgba(69, 180, 228, 0.566) !important;
     border-radius: 100px;
     border: 1px solid rgb(118, 176, 221);
@@ -74,7 +67,6 @@ div.scrollmenu a {
   }
 }
 
-/* Body styles */
 body {
   display: flex;
   flex-direction: column;
@@ -88,7 +80,6 @@ body {
   padding-right: 17px;
 }
 
-/* Body styles (mobile) */
 @media only screen and (max-width: 768px) {
   body {
     margin-bottom: -50px;
@@ -98,7 +89,6 @@ body {
   }
 }
 
-/* Content styles */
 .content {
   width: 100%;
   display: flex;
@@ -113,12 +103,10 @@ body .content {
   overflow-y: scroll;
 }
 
-/* Child div inside content PIZZA??*/
 .content div {
   width: 100%;
 }
 
-/* Category line styles */
 .lineCategory {
   height: 3px;
   border-width: 1;
@@ -127,33 +115,27 @@ body .content {
   display: none;
 }
 
-/* Category line styles (mobile) */
 @media only screen and (max-width: 768px) {
   .lineCategory {
     display: none;
   }
 }
 
-/* Line styles */
 .line {
   border-top: 3px blue;
 }
 
-/* Title styles */
 .Naslov {
   font-weight: 400;
   margin-top: -10px;
   margin-bottom: -30px;
   padding: 100px 20px 40px 20px;
-  /* background-color: rgb(148, 217, 231); */
   color: rgb(38, 38, 38);
-  /* font-family: Arial, Helvetica, sans-serif; */
   font-family: "Khand";
   font-size: 52px;
   text-transform: uppercase;
 }
 
-/* Title styles (mobile) */
 @media only screen and (max-width: 768px) {
   .Naslov {
     font-size: 30px;
@@ -161,14 +143,11 @@ body .content {
     margin-top: -60px;
     margin-bottom: -60px;
     padding: 100px 20px 40px 20px;
-    /* background-color: rgb(148, 217, 231); */
     color: rgb(68, 142, 158);
-    /* font-family: Arial, Helvetica, sans-serif; */
     font-family: "Khand";
   }
 }
 
-/* Item styles */
 .Items {
   font-weight: 400;
   font-size: 2.8vh;
@@ -176,31 +155,25 @@ body .content {
   margin-top: -10px;
   margin-bottom: -30px;
   padding: 40px 40px 40px 50px;
-  /* font-family: Arial, Helvetica, sans-serif; */
   font-family: "GloriaHallelujah";
   font-size: 2vh;
   color: rgb(38, 38, 38);
-  /* background-color: rgb(148, 217, 231); */
   font-weight: 500;
 }
 
-/* Item styles (mobile) */
 @media only screen and (max-width: 768px) {
   .Items {
     margin-top: -10px;
     margin-bottom: -30px;
     padding: 40px 40px 40px 50px;
-    /* font-family: Arial, Helvetica, sans-serif; */
     font-family: "Love ya like a sister";
     font-size: 2.3vh;
     color: rgb(38, 38, 38);
-    /* background-color: rgb(148, 217, 231); */
     font-weight: 800;
     letter-spacing: 1.5px;
   }
 }
 
-/* Money styles */
 .money {
   color: rgb(0, 0, 0);
   float: right;
@@ -209,7 +182,6 @@ body .content {
   font-family: "Khand";
 }
 
-/* Money styles (mobile) */
 @media only screen and (max-width: 768px) {
   .money {
     color: rgb(68, 142, 158);
@@ -219,7 +191,6 @@ body .content {
   }
 }
 
-/* Element width */
 #Kafe,
 #PrirodniSokovi,
 #BezalkoholnaPica,

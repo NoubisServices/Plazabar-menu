@@ -141,7 +141,7 @@ body .content {
   .Naslov {
     font-size: 2.7vh;
     font-weight: 600;
-    margin-top: -20px;
+    margin-top: -35px;
     margin-bottom: -60px;
     padding: 100px 20px 40px 20px;
     color: rgb(0, 128, 120);
@@ -297,9 +297,6 @@ body .content {
   color: rgba(15, 35, 60, 255);
   line-height: 10px;
 }
-/* .spanOpis {
-  max-width: 50% !important;
-} */
 
 .SizesAndPrices {
   flex: 30;

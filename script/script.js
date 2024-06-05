@@ -55,11 +55,4 @@ let kategorije = [
       }
   }
   
-  // Add scroll event listeners to synchronize scrolling
-  document.getElementById('meniKategorije').addEventListener('scroll', function() {
-      document.getElementById('imeKategorije').scrollTop = this.scrollTop;
-  });
   
-  document.getElementById('imeKategorije').addEventListener('scroll', function() {
-      document.getElementById('meniKategorije').scrollTop = this.scrollTop;
-  });

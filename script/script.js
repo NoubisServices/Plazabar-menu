@@ -30,6 +30,12 @@ var parentCategory = document.getElementById("contentCategory");
 var arrayOfItems = [];
 var arrayOfMenus = [];
 
+var style = document.createElement("style");
+style.type = "text/css";
+style.innerHTML =
+  ".activate {  background-color: #44b4e490 !important; border-radius: 100px; border: 1px solid #76b0dd; color: #ffffff !important;}";
+document.getElementsByTagName("head")[0].appendChild(style);
+
 kategorije.forEach((item) => {
   var meniTempKategorija = document.getElementById(item + "A");
   var tempKategorija = document.getElementById(item);
@@ -39,62 +45,54 @@ kategorije.forEach((item) => {
 
 let isScrolling = false;
 
-parentMenu.addEventListener("scroll", () => {
+parentCategory.addEventListener("scroll", () => {
   if (!isScrolling) {
     isScrolling = true;
 
     setTimeout(() => {
-      const scrollPosition = parentMenu.scrollLeft;
-      arrayOfMenus.forEach((item, index) => {
-        const itemOffset = item.offsetLeft;
-        const itemWidth = item.offsetWidth;
+      const scrollPosition = parentCategory.scrollTop;
+      arrayOfItems.forEach((item, index) => {
+        const itemOffset = item.offsetTop;
+        const itemHeight = item.offsetHeight;
 
         if (
-          scrollPosition >= itemOffset &&
-          scrollPosition < itemOffset + itemWidth
+          scrollPosition + parentMenu.offsetHeight * 0.1 >=
+            itemOffset - parentCategory.offsetTop &&
+          scrollPosition < itemOffset + itemHeight - parentCategory.offsetTop &&
+          !(
+            scrollPosition >
+            parentCategory.scrollHeight - parentCategory.offsetHeight
+          )
         ) {
-          parentCategory.scrollTo({
-            top: arrayOfItems[index].offsetTop - parentCategory.offsetTop,
+          parentMenu.scrollTo({
+            left:
+              arrayOfMenus[index].offsetLeft -
+              ((parentMenu.offsetWidth - arrayOfMenus[index].offsetWidth) * 1) /
+                2,
             behavior: "smooth",
           });
+          arrayOfMenus.forEach((item) => item.classList.remove("activate"));
+          arrayOfMenus[index].classList.add("activate");
         }
       });
 
       isScrolling = false;
-    }, 250);
+    }, 300);
   }
 });
 
 function myFunction(name) {
+  isScrolling = true;
   var imeKategorije = document.getElementById(name);
-  var meniKategorije = document.getElementById(name + "A");
-
-  kategorije.forEach((element) => {
-    let neselektovanaKategorija = document.getElementById(element);
-    if (neselektovanaKategorija) {
-      neselektovanaKategorija.style.backgroundColor = "#11ffee00";
-      neselektovanaKategorija.style.opacity = "1";
-    }
-
-    let selektovanaKategorija = document.getElementById(element + "A");
-    if (selektovanaKategorija) {
-      selektovanaKategorija.style.backgroundColor = "#95D8EA";
-      selektovanaKategorija.style.color = "black";
-    }
-  });
 
   if (imeKategorije) {
-    imeKategorije.style.backgroundColor = "none";
-    imeKategorije.style.opacity = "1";
-
     parentCategory.scrollTo({
       top: imeKategorije.offsetTop - parentCategory.offsetTop,
       behavior: "smooth",
     });
+    arrayOfMenus.forEach((item) => item.classList.remove("activate"));
   }
-
-  if (meniKategorije) {
-    meniKategorije.style.backgroundColor = "black";
-    meniKategorije.style.color = "white";
-  }
+  setTimeout(() => {
+    isScrolling = false;
+  }, 800);
 }

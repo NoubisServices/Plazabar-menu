@@ -61,7 +61,7 @@ parentMenu.addEventListener("scroll", () => {
       });
 
       isScrolling = false;
-    }, 250); 
+    }, 250);
   }
 });
 

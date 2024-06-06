@@ -219,21 +219,18 @@ body .content {
   width: 100%;
 }
 
-/* Parent food item styles */
 .parentHrana {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-/* Child name styles */
 .childName {
   font-weight: bold;
   font-size: 3vh;
   font-family: cursive;
 }
 
-/* Child size styles */
 .childSize p {
   text-align: right;
   font-weight: bold;
@@ -241,7 +238,6 @@ body .content {
   font-family: cursive;
 }
 
-/* Child cost styles */
 .childCost p {
   text-align: right;
   font-weight: bold;
@@ -250,7 +246,6 @@ body .content {
   color: #000000;
 }
 
-/* Description styles */
 .Opis p {
   margin: 0;
   padding: 0;
@@ -260,20 +255,17 @@ body .content {
   font-family: cursive;
 }
 
-/* Border styles */
 .borderClass {
   border-style: none none dotted none;
   border-color: blue;
 }
 
-/* Span description styles */
 .spanOpis {
   font-size: 1.5vh;
   font-family: "Roboto Condensed";
   line-height: 25px !important;
 }
 
-/* Pizzas */
 .PizzaName {
   font-size: 2.4vh;
 }

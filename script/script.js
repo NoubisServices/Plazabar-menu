@@ -84,6 +84,8 @@ parentCategory.addEventListener("scroll", () => {
 function myFunction(name) {
   isScrolling = true;
   var imeKategorije = document.getElementById(name);
+  var imeMenija = document.getElementById(name+"A");
+
 
   if (imeKategorije) {
     parentCategory.scrollTo({
@@ -91,6 +93,7 @@ function myFunction(name) {
       behavior: "smooth",
     });
     arrayOfMenus.forEach((item) => item.classList.remove("activate"));
+    imeMenija.classList.add("activate");
   }
   setTimeout(() => {
     isScrolling = false;

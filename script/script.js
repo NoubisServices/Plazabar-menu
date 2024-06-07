@@ -44,7 +44,6 @@ kategorije.forEach((item) => {
 });
 
 let isScrolling = false;
-
 parentCategory.addEventListener("scroll", () => {
   if (!isScrolling) {
     isScrolling = true;
@@ -80,12 +79,10 @@ parentCategory.addEventListener("scroll", () => {
     }, 300);
   }
 });
-
 function myFunction(name) {
   isScrolling = true;
   var imeKategorije = document.getElementById(name);
-  var imeMenija = document.getElementById(name+"A");
-
+  var imeMenija = document.getElementById(name + "A");
 
   if (imeKategorije) {
     parentCategory.scrollTo({

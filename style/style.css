@@ -61,7 +61,7 @@ div.scrollmenu p {
 body {
   display: flex;
   flex-direction: column;
-  background-image: url("../Images/pozadina.png");
+  background-image: url("../Images/Untitled1.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   min-height: 100vh;
@@ -69,6 +69,18 @@ body {
   padding-top: 0px;
   padding-left: 17px;
   padding-right: 17px;
+}
+
+.floating-logo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 100px;
+    height: 100px;
+    background-image: url("../Images/PlazaBarImage-nobg.png");
+    background-size: cover;
 }
 
 @media only screen and (max-width: 768px) {

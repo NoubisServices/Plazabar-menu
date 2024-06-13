@@ -30,12 +30,6 @@ var parentCategory = document.getElementById("contentCategory");
 var arrayOfItems = [];
 var arrayOfMenus = [];
 
-var style = document.createElement("style");
-style.type = "text/css";
-style.innerHTML =
-  ".activate {  background-color: #44b4e490 !important; border-radius: 100px; border: 1px solid #76b0dd; color: #ffffff !important;}";
-document.getElementsByTagName("head")[0].appendChild(style);
-
 kategorije.forEach((item) => {
   var meniTempKategorija = document.getElementById(item + "A");
   var tempKategorija = document.getElementById(item);

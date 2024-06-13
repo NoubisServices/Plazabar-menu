@@ -315,3 +315,10 @@ body .content {
   max-width: 70% !important;
   line-height: 16px !important;
 }
+
+div.scrollmenu p.activate {
+  background-color: #44b4e490;
+  border-radius: 100px;
+  border: 1px solid #76b0dd;
+  color: white;
+}

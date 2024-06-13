@@ -70,7 +70,7 @@ div.scrollmenu p:hover {
 body {
   display: flex;
   flex-direction: column;
-  background-image: url("../Images/Untitled1.png");
+  background-image: url("../images/Untitled1.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   min-height: 100vh;
@@ -88,7 +88,7 @@ body {
     z-index: -1;
     width: 150px;
     height: 150px;
-    background-image: url("../Images/PlazaBarImage-nobg.png");
+    background-image: url("../images/PlazaBarImage-nobg.png");
     background-size: cover;
     opacity: 30%;
 }

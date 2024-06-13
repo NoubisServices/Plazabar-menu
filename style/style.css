@@ -40,6 +40,15 @@ div.scrollmenu p {
   text-decoration: none;
   border-radius: 100px;
   transition: background-color 0.3s, border-radius 0.3s, color 0.3s;
+  border: 1px solid transparent;
+}
+
+div.scrollmenu p:hover {
+  background-color: #44b4e490;
+  border-radius: 100px;
+  border: 1px solid #76b0dd;
+  color: white;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {

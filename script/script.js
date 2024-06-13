@@ -1,4 +1,5 @@
-let kategorije = [
+// Create menu items for each category
+const categories = [
   "Kafe",
   "PrirodniSokovi",
   "BezalkoholnaPica",
@@ -24,69 +25,73 @@ let kategorije = [
   "Kokteli",
   "NonAlchoholic",
 ];
+const arrayOfMenus = [];
+const arrayOfItems = [];
 
-var parentMenu = document.getElementById("menuContainer");
-var parentCategory = document.getElementById("contentCategory");
-var arrayOfItems = [];
-var arrayOfMenus = [];
+for (const category of categories) {
+  const menuContainer = document.getElementById(`${category}A`);
+  const menuItem = document.getElementById(category);
 
-kategorije.forEach((item) => {
-  var meniTempKategorija = document.getElementById(item + "A");
-  var tempKategorija = document.getElementById(item);
-  arrayOfItems.push(tempKategorija);
-  arrayOfMenus.push(meniTempKategorija);
-});
+  arrayOfMenus.push(menuContainer);
+  arrayOfItems.push(menuItem);
+}
 
+// Handle parent containers
 let isScrolling = false;
-parentCategory.addEventListener("scroll", () => {
-  if (!isScrolling) {
-    isScrolling = true;
+const SCROLL_TIMEOUT = 300;
+const parentMenu = document.getElementById("menuContainer");
+const parentCategory = document.getElementById("contentCategory");
+parentCategory.addEventListener("scroll", handleScroll);
 
-    setTimeout(() => {
-      const scrollPosition = parentCategory.scrollTop;
-      arrayOfItems.forEach((item, index) => {
-        const itemOffset = item.offsetTop;
-        const itemHeight = item.offsetHeight;
+// Event handlers
+function handleScroll() {
+  if (isScrolling) return;
 
-        if (
-          scrollPosition + parentMenu.offsetHeight * 0.1 >=
-            itemOffset - parentCategory.offsetTop &&
-          scrollPosition < itemOffset + itemHeight - parentCategory.offsetTop &&
-          !(
-            scrollPosition >
-            parentCategory.scrollHeight - parentCategory.offsetHeight
-          )
-        ) {
-          parentMenu.scrollTo({
-            left:
-              arrayOfMenus[index].offsetLeft -
-              ((parentMenu.offsetWidth - arrayOfMenus[index].offsetWidth) * 1) /
-                2,
-            behavior: "smooth",
-          });
-          arrayOfMenus.forEach((item) => item.classList.remove("activate"));
-          arrayOfMenus[index].classList.add("activate");
-        }
-      });
-
-      isScrolling = false;
-    }, 300);
-  }
-});
-function myFunction(name) {
   isScrolling = true;
-  var imeKategorije = document.getElementById(name);
-  var imeMenija = document.getElementById(name + "A");
 
-  if (imeKategorije) {
-    parentCategory.scrollTo({
-      top: imeKategorije.offsetTop - parentCategory.offsetTop,
-      behavior: "smooth",
-    });
-    arrayOfMenus.forEach((item) => item.classList.remove("activate"));
-    imeMenija.classList.add("activate");
-  }
   setTimeout(() => {
+    const scrollPosition = parentCategory.scrollTop;
+    arrayOfItems.forEach((item, index) => {
+      const itemOffset = item.offsetTop;
+      const itemHeight = item.offsetHeight;
+
+      const isActive =
+        scrollPosition + parentCategory.offsetHeight * 0.1 >=
+          itemOffset - parentCategory.offsetTop &&
+        scrollPosition < itemOffset + itemHeight - parentCategory.offsetTop &&
+        !(
+          scrollPosition >
+          parentCategory.scrollHeight - parentCategory.offsetHeight
+        );
+
+      if (isActive) {
+        parentMenu.scrollTo({
+          left:
+            arrayOfMenus[index].offsetLeft -
+            ((parentMenu.offsetWidth - arrayOfMenus[index].offsetWidth) * 1) /
+              2,
+          behavior: "smooth",
+        });
+        arrayOfMenus.forEach((item) => item.classList.remove("activate"));
+        arrayOfMenus[index].classList.add("activate");
+      }
+    });
+
     isScrolling = false;
-  }, 800);
+  }, SCROLL_TIMEOUT);
+}
+
+function scrollToCategory(name) {
+  const category = document.getElementById(name);
+  const container = document.getElementById(`${name}A`);
+
+  if (category) {
+    category.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+
+    arrayOfMenus.forEach((item) => item.classList.remove("activate"));
+    container.classList.add("activate");
+  }
 }

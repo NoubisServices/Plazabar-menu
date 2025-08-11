@@ -72,9 +72,10 @@ parentCategory.addEventListener("scroll", () => {
           const itemTop = item.offsetTop - parentCategory.offsetTop - 100;
           const itemBottom = itemTop + item.offsetHeight;
           const viewportTop = scrollPosition;
-          const viewportBottom = scrollPosition + parentMenu.offsetHeight * 0.1;
+          const viewportBottom = scrollPosition + parentCategory.offsetHeight;
+          const triggerPosition = itemTop + (item.offsetHeight * 0.3); // Activate when 30% into view
 
-          if (viewportBottom >= itemTop && viewportTop < itemBottom) {
+          if (scrollPosition >= itemTop - 100 && scrollPosition < itemBottom - 100) {
             activateMenuItem(index);
             break; // Exit loop once we find the active section
           }

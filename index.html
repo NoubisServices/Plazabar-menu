@@ -13,7 +13,7 @@
    <body>
       <div class="floating-logo"></div>
       <div id="menuContainer" class="scrollmenu">
-         <p onclick="myFunction('Kokteli')" id="KokteliA">Kokteli</p>
+         <p role="button" tabindex="0" aria-label="Cocktails category" onclick="myFunction('Kokteli')" onkeydown="if(event.key === 'Enter') myFunction('Kokteli')" id="KokteliA">Kokteli</p>
          <p onclick="myFunction('Kafe')" id="KafeA">Kafe</p>
          <p onclick="myFunction('PrirodniSokovi')" id="PrirodniSokoviA">Prirodni Sokovi</p>
          <p onclick="myFunction('BezalkoholnaPica')" id="BezalkoholnaPicaA" >Bezalkoholna pića</p>

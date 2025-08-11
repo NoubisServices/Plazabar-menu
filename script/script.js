@@ -14,7 +14,6 @@ let kategorije = [
   "Konjak",
   "Gin",
   "Viski",
-  "Piva",
   "Cideri",
   "Rakija",
   "VinaC",

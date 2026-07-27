@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="sr">
    <head>
       <title>Page Title</title>
       <meta name="viewport" http-equiv="content-type" content="text/html; charset=utf-8; width=device-width; initial-scale=1"/>
@@ -13,7 +13,7 @@
    <body>
       <div class="floating-logo"></div>
       <div id="menuContainer" class="scrollmenu">
-         <p onclick="myFunction('Kokteli')" id="KokteliA">Kokteli</p>
+         <p role="button" tabindex="0" aria-label="Cocktails category" onclick="myFunction('Kokteli')" onkeydown="if(event.key === 'Enter') myFunction('Kokteli')" id="KokteliA">Kokteli</p>
          <p onclick="myFunction('Kafe')" id="KafeA">Kafe</p>
          <p onclick="myFunction('PrirodniSokovi')" id="PrirodniSokoviA">Prirodni Sokovi</p>
          <p onclick="myFunction('BezalkoholnaPica')" id="BezalkoholnaPicaA" >Bezalkoholna pića</p>
@@ -33,8 +33,6 @@
          <p onclick="myFunction('VinaC')" id="VinaCA">Vina na čašu</p>
          <p onclick="myFunction('VinaF')" id="VinaFA">Vina na flašu</p>
          <p onclick="myFunction('LetnjiMix')" id="LetnjiMixA">Letnji mix</p>
-         <p onclick="myFunction('Pizza')" id="PizzaA">Pizza</p>
-         <p onclick="myFunction('Sendvici')" id="SendviciA">Sendviči</p>
          <p onclick="myFunction('NonAlchoholic')" id="NonAlchoholicA">Non alchoholic</p>
       </div>
 
@@ -43,98 +41,98 @@
          <p class="Naslov">Kokteli<span class="English"> | Cocktails</span></p>
          <hr class="lineCategory" />
          <p class="Items">
-            PLAYA DE PALIĆ <span class="money">690 RSD</span> <br />
+            PLAYA DE PALIĆ <span class="money">740 RSD</span> <br />
             <span class="spanOpis">(Absolut vodka, pire Maracuja, sirup Kamilica, Lemon juice)</span>
          </p>
          <hr class="line" />
          <p class="Items">
-            MAYA BEROVIĆ <span class="money">490 RSD</span> <br />
+            MAYA BEROVIĆ <span class="money">550 RSD</span> <br />
             <span class="spanOpis">(Sinner Gin, Lemon juice)</span>
          </p>
          <hr class="line" />
          <p class="Items">
-            I and I <span class="money">680 RSD</span> <br /> <span class="spanOpis">(Absolut vodka, pire
+            I and I <span class="money">730 RSD</span> <br /> <span class="spanOpis">(Absolut vodka, pire
          Jagoda, sirup Hibiskus, Lemon juice)</span>
          </p>
          <hr class="line" />
          <p class="Items">
-            MOSCOW MULE <span class="money">620 RSD</span> <br />
+            MOSCOW MULE <span class="money">670 RSD</span> <br />
             <span class="spanOpis">(Absolut vodka, sirup Đumbir, Lemon juice)</span>
          </p>
          <hr class="line" />
          <p class="Items">
-            BRAMBLE <span class="money">620 RSD</span> <br /> <span class="spanOpis">(Sinner Gin, Lemon
+            BRAMBLE <span class="money">670 RSD</span> <br /> <span class="spanOpis">(Sinner Gin, Lemon
          juice, Pire šumsko voće) </span>
          </p>
          <hr class="line" />
          <p class="Items">
-            NEGRONI <span class="money">610 RSD</span> <br />
+            NEGRONI <span class="money">660 RSD</span> <br />
             <span class="spanOpis">(Sinner Gin, Campari, Martini Rosso)</span>
          </p>
          <hr class="line" />
          <p class="Items">
-            ELDER COLLINS <span class="money">530 RSD</span> <br /> <span class="spanOpis">(Sinner Gin,
+            ELDER COLLINS <span class="money">580 RSD</span> <br /> <span class="spanOpis">(Sinner Gin,
          sirup Zova, Lemon juice)</span>
          </p>
          <hr class="line" />
          <p class="Items">
-            PASSION MARGARITA <span class="money">680 RSD</span> <br />
+            PASSION MARGARITA <span class="money">720 RSD</span> <br />
             <span class="spanOpis">(Olmeca Tequila, pire Maracuja, Triple sec, Lemon juice)</span>
          </p>
          <hr class="line" />
          <p class="Items">
-            MAI TAI <span class="money">690 RSD</span> <br />(Havana rum, Triple
+            MAI TAI <span class="money">730 RSD</span> <br />(Havana rum, Triple
             <span class="spanOpis">Sec, sirup badem, Lemon juice, sok ananas)</span>
          </p>
          <hr class="line" />
          <p class="Items">
-            CUBA LIBRE <span class="money">630RSD</span> <br />
+            CUBA LIBRE <span class="money">680 RSD</span> <br />
             <span class="spanOpis">(Havana rum, Lemon juice, Coca-Cola)</span>
          </p>
          <hr class="line" />
          <p class="Items">
-            MOHITO <span class="money">630 RSD</span> <br /><span class="spanOpis">(Havana rum, smeđi
+            MOHITO <span class="money">680 RSD</span> <br /><span class="spanOpis">(Havana rum, smeđi
          šećer, nana, limeta)</span>
          </p>
          <hr class="line" />
          <p class="Items">
-            MOHITO <span class="money">680 RSD</span> <br />
+            MOHITO <span class="money">730 RSD</span> <br />
             STRAWBERRY/MARACUJA <br />
             <span class="spanOpis">(Havana rum, pire Jagoda/pire Maracuja, nana, limeta) </span>
          </p>
          <hr class="line" />
          <p class="Items">
-            PENICILLIN <span class="money">580 RSD</span> <br /><span class="spanOpis">(Dewars, sirup
+            PENICILLIN <span class="money">620 RSD</span> <br /><span class="spanOpis">(Dewars, sirup
          Đumbir, Lemon juice)</span>
          </p>
          <hr class="line" />
          <p class="Items">
-            HUGO <span class="money">550 RSD</span> <br /><span class="spanOpis">(Prosecco, sirup Zova, limeta, nana)</span>
+            HUGO <span class="money">590 RSD</span> <br /><span class="spanOpis">(Prosecco, sirup Zova, limeta, nana)</span>
          </p>
 
       </div>
       <div id="Kafe">
          <p class="Naslov">Kafe<span class="English"> | Coffee</span></p>
          <hr class="lineCategory" />
-         <p class="Items">Espresso <span class="money"> 200 RSD</span></p>
+         <p class="Items">Espresso <span class="money"> 230 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Espresso sa mlekom <span class="money"> 220 RSD </span></p>
+         <p class="Items">Espresso sa mlekom <span class="money"> 240 RSD </span></p>
          <hr class="line" />
-         <p class="Items">Espresso sa šlagom <span class="money"> 230 RSD </span></p>
+         <p class="Items">Espresso sa šlagom <span class="money"> 260 RSD </span></p>
          <hr class="line" />
-         <p class="Items">Dupli espresso <span class="money"> 300 RSD </span></p>
+         <p class="Items">Dupli espresso <span class="money"> 360 RSD </span></p>
          <hr class="line" />
-         <p class="Items">Macchiato <span class="money">220 RSD</span></p>
+         <p class="Items">Macchiato <span class="money">240 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Capuccino <span class="money">230 RSD</span></p>
+         <p class="Items">Capuccino <span class="money">250 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Nescaffe <span class="money">240 RSD</span></p>
+         <p class="Items">Nescaffe <span class="money">250 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Nescaffe sa šlagom <span class="money">260 RSD</span></p>
+         <p class="Items">Nescaffe sa šlagom <span class="money">280 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Ice caffe <span class="money">300 RSD</span></p>
+         <p class="Items">Ice caffe <span class="money">350 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Cafe latte <span class="money">270 RSD</span></p>
+         <p class="Items">Cafe latte <span class="money">290 RSD</span></p>
          <hr class="line" />
          <p class="Items">Domaća kafa <span class="money">180 RSD</span></p>
          <br />
@@ -147,123 +145,125 @@
       <div id="PrirodniSokovi">
          <p class="Naslov">Prirodni sokovi<span class="English"> | Natural Juices</span></p>
          <hr class="lineCategory" />
-         <p class="Items">Limunada 0,3l <span class="money"> 210 RSD </span></p>
+         <p class="Items">Limunada 0,3l <span class="money"> 240 RSD </span></p>
          <hr class="line" />
          <p class="Items">Limunada 0,5l <span class="money">290 RSD</span></p>
          <hr class="line" />
          <p class="Items">Cedjeni grejp 0,3l <span class="money">350 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Monin limunada sa ukusom 0,3l <span class="money">280 RSD</span></p>
+         <p class="Items">Monin limunada sa ukusom 0,3l <span class="money">300 RSD</span></p>
          <hr class="line" />
-         <p class="Items"> Monin limunada sa ukusom 0,5l <span class="money">380 RSD</span></p>
+         <p class="Items"> Monin limunada sa ukusom 0,5l <span class="money">400 RSD</span></p>
          <hr class="line" />
-         <p class="Items"> Ceđena jabuka 0,3l <span class="money">280 RSD</span> </p>
+         <p class="Items"> Ceđena jabuka 0,3l <span class="money">290 RSD</span> </p>
          <hr class="line" />
-         <p class="Items"> Ceđena narandža 0,25l <span class="money">300 RSD</span> </p>
+         <p class="Items"> Ceđena narandža 0,3l <span class="money">360 RSD</span> </p>
          <hr class="line" />
-         <p class="Items"> Ceđena narandža 0,5l <span class="money">480 RSD</span></p>
+         <p class="Items"> Ceđena narandža 0,5l <span class="money">490 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Ceđeni mix 0,3l <span class="money">330 RSD</span></p>
+         <p class="Items">Ceđeni mix 0,3l <span class="money">360 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Ceđeni mix 0,5l <span class="money">480 RSD</span></p>
+         <p class="Items">Ceđeni mix 0,5l <span class="money">500 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Sok od zove 0,4l <span class="money">280 RSD</span></p>
+         <p class="Items">Sok od zove 0,4l <span class="money">270 RSD</span></p>
       </div>
 
       <div id="BezalkoholnaPica">
          <p class="Naslov">Bezalkoholna pića<span class="English"> | Soft Drinks</span></p>
          <hr class="lineCategory" />
-         <p class="Items"> Bravo Pomorandža 0,25l <span class="money">250 RSD</span> </p>
+         <p class="Items"> Bravo Pomorandža 0,25l <span class="money">280 RSD</span> </p>
          <hr class="line" />
-         <p class="Items">Bravo Breskva 0,25l <span class="money">250 RSD</span></p>
+         <p class="Items">Bravo Breskva 0,25l <span class="money">280 RSD</span></p>
          <hr class="line" />
-         <p class="Items"> Bravo Jabuka 0,25l <span class="money">250 RSD</span> </p>
+         <p class="Items"> Bravo Jabuka 0,25l <span class="money">280 RSD</span> </p>
          <hr class="line" />
-         <p class="Items">Bravo Jagoda 0,25l <span class="money">250 RSD</span></p>
+         <p class="Items">Bravo Jagoda 0,25l <span class="money">280 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Bravo Borovnica 0,25l <span class="money">250 RSD</span></p>
+         <p class="Items">Bravo Borovnica 0,25l <span class="money">280 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Cedevita <span class="money">220 RSD</span></p>
+         <p class="Items">Cedevita <span class="money">250 RSD</span></p>
       </div>
 
       <div id="Vode">
          <p class="Naslov">Vode<span class="English"> | Water</span></p>
          <hr class="lineCategory" />
-         <p class="Items">VODA VODA 0,33l <span class="money">180 RSD</span></p>
+         <p class="Items">VODA VODA 0,33l <span class="money">210 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Knjaz Miloš 0,25l <span class="money">180 RSD</span></p>
+         <p class="Items">VODA VODA 2 0,25l <span class="money">220 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Knjaz limun/narandza <span class="money">200 RSD</span></p>
+         <p class="Items">Knjaz Miloš 0,25l <span class="money">210 RSD</span></p>
+         <hr class="line" />
+         <p class="Items">Knjaz Miloš limun/narandža 0,25l <span class="money">260 RSD</span></p>
       </div>
 
       <div id="GaziraniSokovi">
          <p class="Naslov">Gazirani sokovi<span class="English"> | Carbonated Drinks</span></p>
          <hr class="lineCategory" />
-         <p class="Items">Pepsi cola 0,25l <span class="money">245 RSD</span></p>
+         <p class="Items">Pepsi cola 0,25l <span class="money">280 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Pepsi max zero 0,25l <span class="money">245 RSD</span></p>
+         <p class="Items">Pepsi max zero 0,25l <span class="money">290 RSD</span></p>
          <hr class="line" />
-         <p class="Items"> Mirinda orange 0,25l <span class="money">245 RSD</span></p>
+         <p class="Items"> Mirinda orange 0,25l <span class="money">280 RSD</span></p>
          <hr class="line" />
-         <p class="Items">7up 0,25l <span class="money">245 RSD</span></p>
+         <p class="Items">7up 0,25l <span class="money">280 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Everess Bitter Lemon 0,25l <span class="money">245 RSD</span></p>
+         <p class="Items">Everess Bitter Lemon 0,25l <span class="money">280 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Schweppes Tonic 0,33l <span class="money">250 RSD</span></p>
+         <p class="Items">Schweppes Tonic 0,33l <span class="money">290 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Cocta 0,275l <span class="money">245 RSD</span></p>
+         <p class="Items">Cocta 0,275l <span class="money">290 RSD</span></p>
       </div>
 
       <div id="EnergetskiNapici">
          <p class="Naslov">Energetski napici<span class="English"> | Energy Drinks</span></p>
          <hr class="lineCategory" />
-         <p class="Items">Guarana 0,25l <span class="money">250 RSD</span></p>
+         <p class="Items">Guarana 0,25l <span class="money">270 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Red bull 0,25l <span class="money">370 RSD</span></p>
+         <p class="Items">Red bull 0,25l <span class="money">420 RSD</span></p>
       </div>
 
       <div id="Piva">
          <p class="Naslov">Piva<span class="English"> | Beer</span></p>
          <hr class="lineCategory" />
-         <p class="Items">Lav Premium 0,5l <span class="money">240 RSD</span></p>
+         <p class="Items">Lav Premium 0,5l <span class="money">280 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Tuborg 0,33l <span class="money">270 RSD</span></p>
+         <p class="Items">Tuborg 0,33l <span class="money">300 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Calsberg 0,25l <span class="money">300 RSD</span></p>
+         <p class="Items">Calsberg 0,25l <span class="money">330 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Budweiser 0,33l <span class="money">300 RSD</span></p>
+         <p class="Items">Budweiser 0,33l <span class="money">350 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Budweiser dark 0,33l <span class="money">300 RSD</span></p>
+         <p class="Items">Budweiser dark 0,33l <span class="money">350 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Kronenbourg Blanc 0,33l <span class="money">310 RSD</span></p>
+         <p class="Items">Kronenbourg Blanc 0,33l <span class="money">330 RSD</span></p>
          <hr class="line" />
-         <p class="Items">San Miguel 0,35l <span class="money">470 RSD</span></p>
+         <p class="Items">San Miguel 0,35l <span class="money">490 RSD</span></p>
       </div>
 
       <div id="Tocenopivo">
          <p class="Naslov">Točeno pivo<span class="English"> | Draft Beer</span></p>
          <hr class="lineCategory" />
-         <p class="Items">Tuborg 0,3l <span class="money">260 RSD</span></p>
+         <p class="Items">Tuborg 0,3l <span class="money">280 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Tuborg 0,5l <span class="money">340 RSD</span></p>
+         <p class="Items">Tuborg 0,5l <span class="money">360 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Kronenburg 0,3l <span class="money">300 RSD</span></p>
+         <p class="Items">Kronenburg 0,3l <span class="money">320 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Kronenburg 0,5l <span class="money">400 RSD</span></p>
+         <p class="Items">Kronenburg 0,5l <span class="money">430 RSD</span></p>
       </div>
 
       <div id="Vodke">
          <p class="Naslov">Vodke<span class="English"> | Vodka</span></p>
          <hr class="lineCategory" />
-         <p class="Items">Absolut Vodka 0,03l <span class="money">300 RSD</span></p>
+         <p class="Items">Absolut Vodka 0,03l <span class="money">330 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Grey Goose Vodka 0,03l <span class="money">530 RSD</span></p>
+         <p class="Items">Grey Goose Vodka 0,03l <span class="money">590 RSD</span></p>
       </div>
 
       <div id="Likeri">
          <p class="Naslov">Likeri<span class="English"> | Liqueurs</span></p>
          <hr class="lineCategory" />
-         <p class="Items">Gorki list 0,05l <span class="money">220 RSD</span></p>
+         <p class="Items">Gorki list 0,05l <span class="money">240 RSD</span></p>
          <hr class="line" />
          <p class="Items">Višnja Podrum Palić 0,03l <span class="money">280 RSD</span></p>
       </div>
@@ -271,9 +271,9 @@
       <div id="Tekile">
          <p class="Naslov">Tekile<span class="English"> | Tequila</span></p>
          <hr class="lineCategory" />
-         <p class="Items">Tekila Olmeca Blanco 0,03l <span class="money">295 RSD</span></p>
+         <p class="Items">Tekila Olmeca Blanco 0,03l <span class="money">320 RSD</span></p>
          <hr class="line" />
-         <p class="Items"> Tekila Olmeca Gold 0,03l <span class="money">295 RSD</span></p>
+         <p class="Items"> Tekila Olmeca Gold 0,03l <span class="money">320 RSD</span></p>
       </div>
 
       <div id="Konjak">
@@ -291,15 +291,15 @@
       <div id="Viski">
          <p class="Naslov">Viski<span class="English"> | Whiskey</span></p>
          <hr class="lineCategory" />
-         <p class="Items">Jameson 0,03l <span class="money">310 RSD</span></p>
+         <p class="Items">Jameson 0,03l <span class="money">340 RSD</span></p>
          <hr class="line" />
-         <p class="Items">Chivas Regal 12Y.O. 0,03l <span class="money">420 RSD</span></p>
+         <p class="Items">Chivas Regal 12Y.O. 0,03l <span class="money">490 RSD</span></p>
       </div>
 
       <div id="Cideri">
          <p class="Naslov">Cideri<span class="English"> | Ciders</span></p>
          <hr class="lineCategory" />
-         <p class="Items">Somersby 0,33l <span class="money">300 RSD</span> <br />
+         <p class="Items">Somersby 0,33l <span class="money">340 RSD</span> <br />
             (Mango/Jabuka/Kruška/Borovnica/Malina)
          </p>
       </div>
@@ -344,10 +344,6 @@
             Zvonko Bogdan <span class="money">580 RSD</span> <br />
             Rose Sec 0,125l
          </p>
-         <hr class="line" />
-         <p class="Items">
-            PETRA Traminac 0,125l <span class="money">420 RSD</span>
-         </p>
       </div>
 
       <div id="VinaF">
@@ -381,119 +377,34 @@
          <p class="Naslov">Letnji mix<span class="English"> | Summer Mix</span></p>
          <hr class="lineCategory" />
          <p class="Items">
-            Gorki List Spritz 0,3l <span class="money">390 RSD</span> <br> <span class="spanOpis">
+            Gorki List Spritz 0,3l <span class="money">480 RSD</span> <br> <span class="spanOpis">
             (Gorki list, Prosecco, Sprite)
             </span>
          </p>
          <hr class="line" />
          <p class="Items">
-            Gin Sinner Tonic 0,3l <span class="money">420 RSD</span> <br> <span class="spanOpis">
+            Gin Sinner Tonic 0,3l <span class="money">480 RSD</span> <br> <span class="spanOpis">
             (Gin Sinner, Tonic)
             </span>
          </p>
          <hr class="line" />
          <p class="Items">
-            Aperol Spritz 0,3l <span class="money">530 RSD</span> <br> <span class="spanOpis">
+            Aperol Spritz 0,3l <span class="money">650 RSD</span> <br> <span class="spanOpis">
             (Aperol , Prosseco, Soda)
             </span>
          </p>
       </div>
 
-      <div id="Pizza">
-        <p class="Naslov">Pizza<span class="English"> | Pizza</span></p>
-        <hr class="lineCategory" />
-        <div class="PizzaItem">
-            <div class="PizzaNameDescription">
-                <p class="PizzaName">Sa pečurkama</p>
-                <p class="spanOpis">(kečap, šunka, sir, pečurke, masline) ketchup, ham, cheese, mushrooms, olives)</p>
-                <div class="SizesAndPrices">
-                    <p>(32cm) 880 RSD / (52cm) 1800 RSD</p>
-                </div>
-            </div>
-        </div>
-        <hr class="line" />
-
-        <div class="PizzaItem">
-            <div class="PizzaNameDescription">
-                <p class="PizzaName">Mešana</p>
-                <p class="spanOpis">(kečap, šunka, sir, pečurke, paprika) ketchup, ham, cheese, mushrooms, pepper)</p>
-                <div class="SizesAndPrices">
-                    <p>(32cm) 940 RSD / (52cm) 1850 RSD</p>
-                </div>
-            </div>
-        </div>
-        <hr class="line" />
-
-        <div class="PizzaItem">
-            <div class="PizzaNameDescription">
-                <p class="PizzaName">Domaća</p>
-                <p class="spanOpis">(kečap, šunka, sir, jaje, paprika, crni luk, pavlaka) ketchup, ham, cheese, egg, pepper, onion, sour cream)</p>
-                <div class="SizesAndPrices">
-                    <p>(32cm) 930 RSD / (52cm) 1830 RSD</p>
-                </div>
-            </div>
-        </div>
-        <hr class="line" />
-
-        <div class="PizzaItem">
-            <div class="PizzaNameDescription">
-                <p class="PizzaName">Gurmanska</p>
-                <p class="spanOpis">(kečap, šunka, kulen, dimnjeni vrat, sir, jaje) ketchup, ham, sausage, smoke spare ribs, egg)</p>
-                <div class="SizesAndPrices">
-                    <p>(32cm) 980 RSD / (52cm) 2050 RSD</p>
-                </div>
-            </div>
-        </div>
-        <hr class="line" />
-
-        <div class="PizzaItem">
-            <div class="PizzaNameDescription">
-                <p class="PizzaName">Sa tunjevinom</p>
-                <p class="spanOpis">(kečap, šunka, sir, tunjevina, luk) ketchup, ham, cheese, tuna, garlic)</p>
-                <div class="SizesAndPrices">
-                    <p>(32cm) 980 RSD / (52cm) 1980 RSD</p>
-                </div>
-            </div>
-        </div>
-        <hr class="line" />
-
-        <div class="PizzaItem">
-            <div class="PizzaNameDescription">
-                <p class="PizzaName">Vegeterijana</p>
-                <p class="spanOpis">(paradajz sos, mozzarela, kukuruz, pečurke, masline, paprika, origano) ketchup, cheese, sweet corn, mushrooms, pepper)</p>
-                <div class="SizesAndPrices">
-                    <p>(32cm) 950 RSD / (52cm) 1890 RSD</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-      <div id="Sendvici">
-         <p class="Naslov">Sendviči<span class="English"> | Sandwiches</span></p>
-         <hr class="lineCategory" />
-         <p class="Items">
-            Mornarski <span class="money">650 RSD</span> <br />
-            <span class="spanOpis">(sir, šunka, dimnjeni vrat, slanina, jaje, paprika, paradajz, zelena
-            salata, umak)</span>
-         </p>
-         <hr class="line" />
-         <p class="Items">
-            Pršut <span class="money">650 RSD</span> <br /> <span class="spanOpis">(sir, pršut, paradajz,
-            rukola, umak)</span>
-         </p>
-
-      </div>
       <div id="NonAlchoholic">
          <p class="Naslov">Non alchoholic</p>
          <hr class="lineCategory" />
          <p class="Items">
-            Safety drive maracuja <span class="money">480 RSD</span> <br /><span class="spanOpis">(Pire
+            Safety drive maracuja <span class="money">490 RSD</span> <br /><span class="spanOpis">(Pire
             maracuja, Lemon juice, sirup od kamilice)</span>
          </p>
          <hr class="line" />
          <p class="Items">
-            Safety drive strawberry <span class="money">480 RSD</span> <br /><span class="spanOpis">(Pire
+            Safety drive strawberry <span class="money">490 RSD</span> <br /><span class="spanOpis">(Pire
             jagoda, Lemon juice, sirup Zova)</span>
          </p>
          <hr class="line" />

@@ -1,4 +1,5 @@
 let kategorije = [
+  "Kokteli",
   "Kafe",
   "PrirodniSokovi",
   "BezalkoholnaPica",
@@ -13,15 +14,11 @@ let kategorije = [
   "Konjak",
   "Gin",
   "Viski",
-  "Piva",
   "Cideri",
   "Rakija",
   "VinaC",
   "VinaF",
   "LetnjiMix",
-  "Pizza",
-  "Sendvici",
-  "Kokteli",
   "NonAlchoholic",
 ];
 
@@ -43,42 +40,53 @@ kategorije.forEach((item) => {
   arrayOfMenus.push(meniTempKategorija);
 });
 
+function activateMenuItem(index) {
+  parentMenu.scrollTo({
+    left: arrayOfMenus[index].offsetLeft -
+        (parentMenu.offsetWidth - arrayOfMenus[index].offsetWidth) / 2,
+    behavior: "smooth",
+  });
+  arrayOfMenus.forEach((item) => item.classList.remove("activate"));
+  arrayOfMenus[index].classList.add("activate");
+}
+
+
 let isScrolling = false;
+
 parentCategory.addEventListener("scroll", () => {
   if (!isScrolling) {
     isScrolling = true;
 
     setTimeout(() => {
       const scrollPosition = parentCategory.scrollTop;
-      arrayOfItems.forEach((item, index) => {
-        const itemOffset = item.offsetTop;
-        const itemHeight = item.offsetHeight;
+      const isAtBottom = scrollPosition + parentCategory.offsetHeight >=
+          parentCategory.scrollHeight - 5;
 
-        if (
-          scrollPosition + parentMenu.offsetHeight * 0.1 >=
-            itemOffset - parentCategory.offsetTop &&
-          scrollPosition < itemOffset + itemHeight - parentCategory.offsetTop &&
-          !(
-            scrollPosition >
-            parentCategory.scrollHeight - parentCategory.offsetHeight
-          )
-        ) {
-          parentMenu.scrollTo({
-            left:
-              arrayOfMenus[index].offsetLeft -
-              ((parentMenu.offsetWidth - arrayOfMenus[index].offsetWidth) * 1) /
-                2,
-            behavior: "smooth",
-          });
-          arrayOfMenus.forEach((item) => item.classList.remove("activate"));
-          arrayOfMenus[index].classList.add("activate");
+      if (isAtBottom) {
+        // At bottom - activate last menu item
+        activateMenuItem(arrayOfMenus.length - 1);
+      } else {
+        // Find active section based on scroll position
+        for (let index = 0; index < arrayOfItems.length; index++) {
+          const item = arrayOfItems[index];
+          const itemTop = item.offsetTop - parentCategory.offsetTop - 100;
+          const itemBottom = itemTop + item.offsetHeight;
+          const viewportTop = scrollPosition;
+          const viewportBottom = scrollPosition + parentCategory.offsetHeight;
+          const triggerPosition = itemTop + (item.offsetHeight * 0.3); // Activate when 30% into view
+
+          if (scrollPosition >= itemTop - 100 && scrollPosition < itemBottom - 100) {
+            activateMenuItem(index);
+            break; // Exit loop once we find the active section
+          }
         }
-      });
+      }
 
       isScrolling = false;
     }, 300);
   }
 });
+
 function myFunction(name) {
   isScrolling = true;
   var imeKategorije = document.getElementById(name);

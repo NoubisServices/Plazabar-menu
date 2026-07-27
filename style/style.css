@@ -18,6 +18,20 @@ div.scrollmenu {
     text-transform: uppercase;
     font-family: "Roboto Condensed";
   }
+  
+  div.scrollmenu p {
+    display: inline-block;
+    font-size: 2vh;
+    background-color: rgba(220, 19, 19, 0);
+    color: rgba(15, 35, 60, 255);
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: background-color 0.3s, border-radius 0.3s, color 0.3s;
+  }
 }
 
 .scrollmenu::-webkit-scrollbar {
@@ -42,21 +56,6 @@ div.scrollmenu p {
   transition: background-color 0.3s, border-radius 0.3s, color 0.3s;
 }
 
-@media only screen and (max-width: 768px) {
-  div.scrollmenu p {
-    display: inline-block;
-    font-size: 2vh;
-    background-color: rgba(220, 19, 19, 0);
-    color: rgba(15, 35, 60, 255);
-    font-weight: 600;
-    letter-spacing: 3px;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 100px;
-    transition: background-color 0.3s, border-radius 0.3s, color 0.3s;
-  }
-}
 
 body {
   display: flex;
